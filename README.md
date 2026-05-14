@@ -1,3 +1,10 @@
+## Live Demo
+
+Frontend deployment is available on Vercel:
+
+🔗 https://module5-spec-kit-framework-lab-jk5e.vercel.app/login
+
+
 # Module5-SpecKit-Framework-Lab
 
 A complete demonstration of specification-driven development using the SpecKit framework. This project implements a **Personal Task Board** application through a structured AI-assisted workflow during the EPAM AI Tech Bootcamp Module 5 / Module 6 SpecKit Framework Lab.
