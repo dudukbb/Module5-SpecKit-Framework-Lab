@@ -141,6 +141,16 @@ The implementation phase produced a fully functional responsive user interface:
 - **Category & Priority Badges** – Visual indicators for task attributes and urgency
 - **Due Date Display** – Human-readable date formatting for task deadlines
 
+## Screenshots
+
+### Login Page
+
+![Login Page](./screenshots/login.png)
+
+### Registration Page
+
+![Registration Page](./screenshots/create-account.png)
+
 ## Local Development
 
 ### Prerequisites
