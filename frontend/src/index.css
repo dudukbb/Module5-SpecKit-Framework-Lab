@@ -1,0 +1,325 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1b2633;
+  background-color: #f5f8fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7faff 0%, #f2f6fc 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dbe5f1;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(30, 63, 115, 0.07);
+}
+
+.muted {
+  color: #55657a;
+}
+
+.small {
+  font-size: 0.85rem;
+}
+
+.auth-page {
+  min-height: calc(100vh - 40px);
+  display: grid;
+  place-items: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  display: grid;
+  gap: 14px;
+}
+
+.auth-footer {
+  font-size: 0.92rem;
+  color: #42576f;
+}
+
+.auth-footer a {
+  color: #2d5fe4;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+.board-layout {
+  display: grid;
+  gap: 14px;
+}
+
+.board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.board-content {
+  display: grid;
+  grid-template-columns: minmax(290px, 340px) 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.board-sidebar {
+  display: grid;
+  gap: 14px;
+}
+
+.board-main {
+  display: grid;
+  gap: 12px;
+}
+
+.board-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(210px, 1fr));
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.status-column {
+  background: #f8fbff;
+  border: 1px solid #e1e9f3;
+  border-radius: 12px;
+  padding: 10px;
+  min-height: 420px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+.status-column h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.98rem;
+}
+
+.status-column h3 span {
+  border-radius: 999px;
+  border: 1px solid #c6d5e8;
+  font-size: 0.78rem;
+  padding: 2px 8px;
+  color: #35506f;
+}
+
+.column-cards {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.task-card {
+  border: 1px solid #d9e4f0;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.task-card h4 {
+  font-size: 0.95rem;
+}
+
+.task-card p {
+  color: #4f637b;
+  font-size: 0.88rem;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pill {
+  border-radius: 999px;
+  border: 1px solid #c6d5e8;
+  font-size: 0.74rem;
+  padding: 2px 8px;
+  color: #284968;
+  background: #eef4fc;
+}
+
+.pill.priority {
+  background: #fff2e8;
+  border-color: #f2cfb3;
+  color: #8c4d18;
+}
+
+.due-date {
+  font-size: 0.8rem;
+  color: #3b516a;
+}
+
+.grid-form {
+  display: grid;
+  gap: 10px;
+}
+
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: #324961;
+  font-size: 0.88rem;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #c7d6e8;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #ffffff;
+}
+
+textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid rgba(53, 109, 230, 0.18);
+  border-color: #356de6;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #356de6;
+  color: #ffffff;
+  padding: 9px 13px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2856b6;
+}
+
+button.ghost {
+  background: #eaf1fb;
+  color: #294364;
+}
+
+button.ghost:hover {
+  background: #dce8f8;
+}
+
+button.danger {
+  background: #cf3a3d;
+}
+
+button.danger:hover {
+  background: #b72f32;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.message {
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+.message.error {
+  background: #ffe8e8;
+  border: 1px solid #f0babd;
+  color: #8d2429;
+}
+
+.message.info {
+  background: #e8f3ff;
+  border: 1px solid #bad6f5;
+  color: #164d80;
+}
+
+@media (max-width: 1060px) {
+  .board-content {
+    grid-template-columns: 1fr;
+  }
+
+  .board-sidebar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  #root {
+    padding: 12px;
+  }
+
+  .board-header {
+    display: grid;
+  }
+
+  .board-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .status-grid {
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "module5-speckit-framework-lab",
+  "private": true,
+  "version": "1.0.0",
+  "description": "EPAM AI Tech Bootcamp Module 5 - SpecKit Framework Lab",
+  "scripts": {
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "backend:dev": "npm --prefix backend run dev",
+    "backend:build": "npm --prefix backend run build",
+    "backend:typecheck": "npm --prefix backend run typecheck"
+  }
+}
